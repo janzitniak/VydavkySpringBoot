@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pridaj nový záznam (výdavok)</title>
+</head>
+<body>
+  <form action="#" th:action="@{/ulozZaznam}" th:object="${vydavokObjektThymeleaf}" method="POST">
+    <input type="text" th:field="*{popis}" placeholder="Vypíš popis"><br>
+    <input type="text" th:field="*{cena}" placeholder="Vypíš cenu"><br>
+    <input type="text" th:field="*{kategoria}" placeholder="Vypíš kategóriu"><br>
+    <input type="text" th:field="*{datum}" placeholder="Vypíš dátum"><br>
+
+    <button type="submit">Ulož záznam (výdavok)</button>
+  </form>
+
+</body>
+</html>
