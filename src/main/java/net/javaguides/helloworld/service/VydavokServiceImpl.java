@@ -39,4 +39,6 @@ public class VydavokServiceImpl implements VydavokService {
     public void odstranVydavokPodlaId(long id) {
         vydavokRepository.deleteById(id);
     }
+
+
 }

@@ -1,6 +1,7 @@
 package net.javaguides.helloworld.service;
 
 import net.javaguides.helloworld.model.Vydavok;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 

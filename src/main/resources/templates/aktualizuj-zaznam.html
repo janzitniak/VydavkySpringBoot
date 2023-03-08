@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="#" th:action="@{/ulozZaznam}" th:object="${vydavokObjektThymeleaf}"  method="POST">
+        <input th:field="*{id}" type="hidden">
+
+        <input th:field="*{popis}" type="text">
+        <input th:field="*{cena}" type="number">
+        <input th:field="*{kategoria}" type="text">
+        <input th:field="*{datum}" type="date">
+
+        <button type="submit">Aktualizuj záznam</button>
+    </form>
+</body>
+</html>

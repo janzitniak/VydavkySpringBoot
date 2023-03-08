@@ -14,6 +14,7 @@
         <th>Cena výdavku</th> <!-- th reprezentuje bunku daneho riadka -->
         <th>Kategória</th> <!-- th reprezentuje bunku daneho riadka -->
         <th>Dátum</th> <!-- th reprezentuje bunku daneho riadka -->
+        <th>Akcie</th>
     </tr> <!-- vytvorili sme riadok, KONIEC riadka -->
     </thead> <!-- Koniec hlavicky tabulky -->
     <tbody>
@@ -22,6 +23,10 @@
         <td th:text="${vydavokObjekt.cena}"></td> <!-- rovnako aj pre cena -->
         <td th:text="${vydavokObjekt.kategoria}"></td> <!-- rovnako aj pre kategoria -->
         <td th:text="${vydavokObjekt.datum}"></td> <!-- rovnako aj pre datum -->
+        <td>
+            <a th:href="@{/zobrazFormularNaAktualizaciu/{id}(id=${vydavokObjekt.id})}">Uprav záznam</a>
+            <a th:href="@{/vymazZaznam/{id}(id=${vydavokObjekt.id})}">Vymaž záznam</a>
+        </td>
     </tr>
     </tbody>
 </table>
