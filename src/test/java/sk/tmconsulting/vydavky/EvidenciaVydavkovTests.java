@@ -1,10 +1,10 @@
-package net.javaguides.helloworld;
+package sk.tmconsulting.vydavky;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloWorldApplicationTests {
+class EvidenciaVydavkovTests {
 
 	@Test
 	void contextLoads() {

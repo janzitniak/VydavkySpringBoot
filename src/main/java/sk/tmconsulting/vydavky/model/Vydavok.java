@@ -1,4 +1,4 @@
-package net.javaguides.helloworld.model;
+package sk.tmconsulting.vydavky.model;
 
 
 import jakarta.persistence.*;

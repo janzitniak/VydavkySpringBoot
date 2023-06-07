@@ -1,7 +1,7 @@
-package net.javaguides.helloworld.service;
+package sk.tmconsulting.vydavky.service;
 
-import net.javaguides.helloworld.model.Vydavok;
-import net.javaguides.helloworld.repository.VydavokRepository;
+import sk.tmconsulting.vydavky.model.Vydavok;
+import sk.tmconsulting.vydavky.repository.VydavokRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

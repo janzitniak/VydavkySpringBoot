@@ -1,7 +1,7 @@
-package net.javaguides.helloworld.controller;
+package sk.tmconsulting.vydavky.controller;
 
-import net.javaguides.helloworld.model.Vydavok;
-import net.javaguides.helloworld.service.VydavokService;
+import sk.tmconsulting.vydavky.model.Vydavok;
+import sk.tmconsulting.vydavky.service.VydavokService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
