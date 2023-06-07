@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Zoznam výdavkov<</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="mt-2 ml-2">
+<body>
 <h1>Zoznam výdavkov</h1>
-
-<table class="table"> <!-- Poznamka v HTML - vytvorili sme tabulku -->
+<table border="1"> <!-- Poznamka v HTML - vytvorili sme tabulku -->
     <thead> <!-- Hlavicka tabulky -->
     <tr> <!-- vytvorili sme riadok, ZACIATOK riadka -->
         <th>Popis výdavku</th> <!-- th reprezentuje bunku daneho riadka -->
@@ -26,12 +23,13 @@
         <td th:text="${vydavokObjekt.kategoria}"></td> <!-- rovnako aj pre kategoria -->
         <td th:text="${vydavokObjekt.datum}"></td> <!-- rovnako aj pre datum -->
         <td>
-            <a th:href="@{/zobrazFormularNaAktualizaciu/{id}(id=${vydavokObjekt.id})}">Uprav záznam</a>
-            <a th:href="@{/vymazZaznam/{id}(id=${vydavokObjekt.id})}">Vymaž záznam</a>
+            <a th:href="@{/uprav-zaznam/{id}(id=${vydavokObjekt.id})}">Uprav záznam</a>
+            <a th:href="@{/vymaz-zaznam/{id}(id=${vydavokObjekt.id})}">Vymaž záznam</a>
         </td>
     </tr>
     </tbody>
 </table>
+<br>
 <a href="/">Prejdi na hlavnú stránku</a>
 </body>
 </html>

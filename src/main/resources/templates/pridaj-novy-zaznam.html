@@ -3,42 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Pridaj nový záznam (výdavok)</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="mt-2 ml-2">
+<body>
     <h1>Pridaj nový záznam (výdavok)</h1>
-    <form action="#" method="POST" th:action="@{/ulozZaznam}" th:object="${vydavokObjektThymeleaf}">
-        <div class="form-group row">
-            <label for="popis" class="col-sm-1 control-label">Popis</label>
-            <div class="col-sm-1">
-                <input id="popis" placeholder="Vypíš popis" class="form-control" th:field="*{popis}" type="text">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="cena" class="col-sm-1 control-label">Cena</label>
-            <div class="col-sm-1">
-                <input id="cena" placeholder="Vypíš cenu" class="form-control" step="0.1" th:field="*{cena}" type="number">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="kategoria" class="col-sm-1 control-label">Katégoria</label>
-            <div class="col-sm-1">
-                <input id="kategoria" placeholder="Vypíš kategóriu" class="form-control" th:field="*{kategoria}" type="text">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="datum" class="col-sm-1 control-label">Dátum</label>
-            <div class="col-sm-2">
-                <input id="datum" placeholder="Vypíš dátum" class="form-control" th:field="*{datum}" type="date">
-            </div>
-        </div>
-        <div class="form-group row">
-            <div class="col-sm-offset-1 col-sm-10">
-                <button type="submit" class="btn btn-primary">Ulož záznam (výdavok)</button>
-            </div>
-        </div>
+    <form action="#" method="POST" th:action="@{/uloz-zaznam}" th:object="${vydavokObjektThymeleaf}">
+        Popis <input id="popis" placeholder="Vypíš popis" class="form-control" th:field="*{popis}" type="text"><br>
+        Cena <input id="cena" placeholder="Vypíš cenu" class="form-control" step="0.1" th:field="*{cena}" type="number"><br>
+        Katégoria <input id="kategoria" placeholder="Vypíš kategóriu" class="form-control" th:field="*{kategoria}" type="text"><br>
+        Dátum<input id="datum" placeholder="Vypíš dátum" class="form-control" th:field="*{datum}" type="date"><br>
+        <button type="submit" class="btn btn-primary">Ulož záznam (výdavok)</button>
     </form>
+    <br>
     <a href="/">Prejdi na hlavnú stránku</a>
 </body>
 </html>
